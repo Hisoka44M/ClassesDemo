@@ -30,5 +30,19 @@ namespace ClassesDemo.Publications
                 Console.WriteLine("книга выдана на неделю");
             }
         }
+
+        //метод класса - проверяет возвращена ли книга
+        public void ReturnBook()
+        {
+            if (isReading)
+            {
+                isReading = false;
+                Console.WriteLine("книга возвращена и теперь доступна для выдачи");
+            }
+            else
+            {
+                Console.WriteLine("книга уже находится в библиотеке");
+            }
+        }
     }
 }
